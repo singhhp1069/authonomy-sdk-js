@@ -6,12 +6,6 @@ class AuthonomySDK {
     }
 
     signUp(callback) {
-        document.cookie = "origin=" + encodeURIComponent(window.location.origin) + ";path=/";
-        const url = `${this.serviceUrl}/web/?type=login&app_did=${this.appDid}&app_secret=${this.appSecret}`;
-        const windowFeatures = "width=500,height=600,resizable,scrollbars=yes,status=1";
-        const popup = window.open(url, 'AuthonomySignUp', windowFeatures);
-        window.addEventListener('message', receiveMessage, false);
-
         const receiveMessage = (event) => {
             console.log("event.origin", event.origin)
             if (event.origin !== this.serviceUrl) {
@@ -26,6 +20,11 @@ class AuthonomySDK {
             // clear cookie
             document.cookie = "origin=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT";
         };
+        document.cookie = "origin=" + encodeURIComponent(window.location.origin) + ";path=/";
+        const url = `${this.serviceUrl}/web/?type=login&app_did=${this.appDid}&app_secret=${this.appSecret}`;
+        const windowFeatures = "width=500,height=600,resizable,scrollbars=yes,status=1";
+        const popup = window.open(url, 'AuthonomySignUp', windowFeatures);
+        window.addEventListener('message', receiveMessage, false);
     }
 
     getAccessToken(oauthCredential, policyCredential, callback) {

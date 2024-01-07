@@ -1,6 +1,6 @@
 {
   "name": "authonomysdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "authonomy sdk for authonomy service",
   "main": "index.js",
   "author": "singhhp1069@gmail.com",
