@@ -1,2 +1,3 @@
 // index.js
-export { AuthonomySDK } from './src/sdk';
+const AuthonomySDK = require('./src/sdk').AuthonomySDK;
+module.exports = { AuthonomySDK };

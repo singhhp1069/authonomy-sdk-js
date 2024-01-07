@@ -1,4 +1,4 @@
-export class AuthonomySDK {
+class AuthonomySDK {
     constructor(config) {
         this.appDid = config.appDid;
         this.appSecret = config.appSecret;
@@ -107,3 +107,5 @@ export class AuthonomySDK {
             });
     }
 }
+
+module.exports = { AuthonomySDK };
