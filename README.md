@@ -1,5 +1,7 @@
 # AuthonomySDK
 
+[![npm version](https://badge.fury.io/js/authonomysdk.svg)](https://badge.fury.io/js/authonomysdk)
+
 AuthonomySDK is a JavaScript library providing easy integration with the Authonomy service for web applications. It simplifies user authentication and authorization processes, leveraging Authonomy's secure backend.
 
 ## Features
