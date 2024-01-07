@@ -102,3 +102,5 @@ sdk.getAccessList(accessToken, (error, data) => {
     console.log('Access list:', data);
 });
 ```
+
+### important: this is a proof-of-concept for demo purpose only not for production
