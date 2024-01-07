@@ -1,0 +1,13 @@
+{
+  "name": "authonomysdk",
+  "version": "0.0.1",
+  "description": "authonomy sdk for authonomy service",
+  "main": "index.js",
+  "author": "singhhp1069@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singhhp1069/authonomy-sdk-js.git"
+  },
+  "homepage": "https://github.com/singhhp1069/authonomy-sdk-js.git#readme"
+}
